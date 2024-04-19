@@ -1,6 +1,6 @@
 # Elastic IP Needed for NAT GW
 resource "aws_eip" "ngw-eip" {
-  vpc       = true
+  domain         = "vpc"
 
   tags = {
       Name  = "robot-${var.ENV}-ngw-eip"
